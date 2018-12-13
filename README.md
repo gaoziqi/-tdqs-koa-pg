@@ -8,7 +8,7 @@ The MIT License (MIT)
 
 **[Installation](#installation)**  
 **[API documentation](#api-documentation)**  
-**[Example](#example)**  
+**[Example](#example)**
 
 ## **Installation**
 
@@ -28,15 +28,6 @@ This is a simple code overview of how to use **@tdqs/koa-pg**.
 | config     | object which Implementation PoolConfig                                        | **YES**   |
 | url        | object which Implementation IKoaPg for allow or prohibit the use of databases | **NO**    |
 | mode       | White List or Black List Default white                                        | **NO**    |
-
-```js
-/**
- * module for db pool connection
- * @param databaseUrl key
- * @param query to execute by client
- * @return promise
- */
-```
 
 #### code simplification
 
