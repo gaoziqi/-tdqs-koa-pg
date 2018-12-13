@@ -1,0 +1,19 @@
+# compiled output
+/src
+/tests
+
+# dependencies
+/node_modules
+
+# IDE - VSCode
+/.vscode
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.gitignore
+nodemon.json
+tsconfig.json
+tslint.json
+shrinkwrap.yaml
