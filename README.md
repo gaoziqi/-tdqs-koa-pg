@@ -9,8 +9,6 @@ The MIT License (MIT)
 **[Installation](#installation)**  
 **[API documentation](#api-documentation)**  
 **[Example](#example)**  
-**[Acknowledgement](#acknowledgement)**  
-**[Other project](#other-project)**
 
 ## **Installation**
 
