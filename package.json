@@ -1,10 +1,10 @@
 {
   "name": "@tdqs/koa-pg",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "基于koa的pg中间件",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon ./tests/server",
+    "dev": "nodemon ./example/server",
     "build": "npm run clean && tsc --build tsconfig.json",
     "clean": "rimraf dist",
     "publish": "npm publish --access public"
@@ -30,7 +30,7 @@
   "devDependencies": {
     "koa": "^2.6.2",
     "@types/koa": "^2.0.47",
-    "@types/node": "^10.12.14",
+    "@types/node": "^10.12.15",
     "@types/pg": "^7.4.11",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
