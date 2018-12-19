@@ -36,11 +36,11 @@ export class KoaPg {
     url?: IUrlList,
     mode: 'white' | 'black' = 'white',
   ) {
-    const koaPg = {} as IKoaPg;
-    koaPg.pool = new Pool(config);
-    koaPg.url = url;
-    koaPg.mod = mode;
-    app.context.koaPg = koaPg;
+    const koapg = {} as IKoaPg;
+    koapg.pool = new Pool(config);
+    koapg.url = url;
+    koapg.mod = mode;
+    app.context.koaPg = koapg;
   }
 
   /**
@@ -94,4 +94,23 @@ export class KoaPg {
       }
     });
   }
+}
+
+/** simple use with @tdqs/koa-api */
+export function koaPg(config: PoolConfig): Koa.Middleware {
+  const pool = new Pool(config);
+  return async (ctx, next) => {
+    ctx.pool = pool;
+    ctx.conn = await ctx.pool.connect();
+    try {
+      await ctx.conn.query('BEGIN');
+      await next();
+      await ctx.conn.query('COMMIT');
+    } catch (e) {
+      await ctx.conn.query('ROLLBACK');
+      throw e;
+    } finally {
+      ctx.conn.release();
+    }
+  };
 }

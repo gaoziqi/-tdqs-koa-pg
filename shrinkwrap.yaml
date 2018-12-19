@@ -2,7 +2,7 @@ dependencies:
   pg: 7.7.1
 devDependencies:
   '@types/koa': 2.0.47
-  '@types/node': 10.12.15
+  '@types/node': 10.12.17
   '@types/pg': 7.4.11
   koa: 2.6.2
   ts-node: 7.0.1
@@ -100,6 +100,11 @@ packages:
     resolution:
       integrity: sha1-IOhWUbYv2GZW5Xycm8dxqxVwvFk=
       tarball: 'http://registry.npm.taobao.org/@types/node/download/@types/node-10.12.15.tgz'
+  /@types/node/10.12.17:
+    dev: true
+    resolution:
+      integrity: sha1-cEBWWyyT1ZMlpo+mkHPnVKftqTo=
+      tarball: 'http://registry.npm.taobao.org/@types/node/download/@types/node-10.12.17.tgz'
   /@types/pg-types/1.11.4:
     dependencies:
       moment: 2.23.0
@@ -653,7 +658,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@types/koa': ^2.0.47
-  '@types/node': ^10.12.15
+  '@types/node': ^10.12.17
   '@types/pg': ^7.4.11
   koa: ^2.6.2
   pg: ^7.7.1
