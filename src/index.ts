@@ -6,7 +6,16 @@
  */
 
 import * as Koa from 'koa';
-import { Pool, PoolConfig } from 'pg';
+import { Pool, PoolClient, PoolConfig } from 'pg';
+export { PoolConfig };
+
+declare module 'koa' {
+  // tslint:disable-next-line:interface-name
+  interface Context {
+    pool: Pool;
+    conn: PoolClient;
+  }
+}
 
 /**
  * @key ctx.path

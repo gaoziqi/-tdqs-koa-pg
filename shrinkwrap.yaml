@@ -1,9 +1,9 @@
 dependencies:
+  '@types/pg': 7.4.11
   pg: 7.7.1
 devDependencies:
   '@types/koa': 2.0.47
-  '@types/node': 10.12.17
-  '@types/pg': 7.4.11
+  '@types/node': 10.12.18
   koa: 2.6.2
   ts-node: 7.0.1
   typescript: 3.2.2
@@ -96,19 +96,18 @@ packages:
       integrity: sha1-WnMG42fFObn2VDSZ3o3VGfrDeos=
       tarball: 'http://registry.npm.taobao.org/@types/mime/download/@types/mime-2.0.0.tgz'
   /@types/node/10.12.15:
-    dev: true
     resolution:
       integrity: sha1-IOhWUbYv2GZW5Xycm8dxqxVwvFk=
       tarball: 'http://registry.npm.taobao.org/@types/node/download/@types/node-10.12.15.tgz'
-  /@types/node/10.12.17:
+  /@types/node/10.12.18:
     dev: true
     resolution:
-      integrity: sha1-cEBWWyyT1ZMlpo+mkHPnVKftqTo=
-      tarball: 'http://registry.npm.taobao.org/@types/node/download/@types/node-10.12.17.tgz'
+      integrity: sha1-HTynZHGJFVhPzZ9jRGIbdnJmXGc=
+      tarball: 'http://registry.npm.taobao.org/@types/node/download/@types/node-10.12.18.tgz'
   /@types/pg-types/1.11.4:
     dependencies:
       moment: 2.23.0
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-jXxZ+1Cc49yj+LrliSUgUcY5qag=
       tarball: 'http://registry.npm.taobao.org/@types/pg-types/download/@types/pg-types-1.11.4.tgz'
@@ -116,7 +115,7 @@ packages:
     dependencies:
       '@types/node': 10.12.15
       '@types/pg-types': 1.11.4
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-3MVg6JwX2FnIPJGtP69gv+rKrWw=
       tarball: 'http://registry.npm.taobao.org/@types/pg/download/@types/pg-7.4.11.tgz'
@@ -417,7 +416,7 @@ packages:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
       tarball: 'http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz'
   /moment/2.23.0:
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-dZ6kkayX1UusWtd2mW4qWMwbwiU=
       tarball: 'http://registry.npm.taobao.org/moment/download/moment-2.23.0.tgz'
@@ -658,7 +657,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@types/koa': ^2.0.47
-  '@types/node': ^10.12.17
+  '@types/node': ^10.12.18
   '@types/pg': ^7.4.11
   koa: ^2.6.2
   pg: ^7.7.1

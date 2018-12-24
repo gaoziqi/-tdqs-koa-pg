@@ -1,16 +1,14 @@
 {
   "name": "@tdqs/koa-pg",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "基于koa的pg中间件",
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon ./example/server",
     "build": "tsc --build tsconfig.json",
     "clean": "rimraf dist",
-    "set:npm": "npm config set registry https://registry.npmjs.org",
-    "set:taobao": "npm config set registry https://registry.npm.taobao.org",
-    "publish": "npm publish --access public",
-    "upload": "npm-run-all --serial clean build set:npm"
+    "publish": "npm --registry https://registry.npmjs.org publish --access public",
+    "upload": "npm-run-all --serial clean build publish"
   },
   "keywords": [
     "koa-pg",
@@ -28,13 +26,13 @@
   "author": "gzq",
   "license": "MIT",
   "dependencies": {
+    "@types/pg": "^7.4.11",
     "pg": "^7.7.1"
   },
   "devDependencies": {
-    "koa": "^2.6.2",
     "@types/koa": "^2.0.47",
-    "@types/node": "^10.12.17",
-    "@types/pg": "^7.4.11",
+    "@types/node": "^10.12.18",
+    "koa": "^2.6.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   }
